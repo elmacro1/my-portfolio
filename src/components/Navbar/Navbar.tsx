@@ -1,14 +1,18 @@
+import Link from "next/link";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
   return (
-    <nav>
-      <ul className={styles.content_container}>
-        <li>Sobre mi</li>
-        <li>Servicios</li>
-        <li>Proyectos</li>
-        <li>Contacto</li>
-      </ul>
+    <nav className={styles.main_container}>
+      <Link href="/#sobre-mi" className={styles.links}>
+        Sobre mi
+      </Link>
+      <Link href="/#proyectos" className={styles.links}>
+        Proyectos
+      </Link>
+      <Link href="/#contacto" className={styles.links}>
+        Contacto
+      </Link>
     </nav>
   );
 };

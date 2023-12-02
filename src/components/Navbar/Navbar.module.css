@@ -1,17 +1,17 @@
-.content_container {
+.main_container {
   display: flex;
 }
 
-.content_container > li {
-  list-style: none;
+.links {
   cursor: pointer;
   padding: 10px;
   margin: 0 10px;
   font-weight: bold;
   color: #c4c4c4;
   font-size: 1rem;
+  text-decoration: none;
 }
 
-.content_container > li:hover {
+.links:hover {
   color: #fff;
 }

@@ -1,4 +1,7 @@
 import Hero from "@/components/Hero/Hero";
+import About from "@/components/About/About";
+import Contact from "@/components/Contact/Contact";
+import Projects from "@/components/Projects/Projects";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -6,6 +9,9 @@ export default function Home() {
     <main className={styles.main}>
       <div className={styles.content_container}>
         <Hero />
+        <About />
+        <Projects />
+        <Contact />
       </div>
     </main>
   );
