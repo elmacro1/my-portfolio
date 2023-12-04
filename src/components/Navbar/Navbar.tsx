@@ -10,6 +10,9 @@ const Navbar = () => {
       <Link href="/#proyectos" className={styles.links}>
         Proyectos
       </Link>
+      <Link href="/#experiencia" className={styles.links}>
+        Experiencia
+      </Link>
       <Link href="/#contacto" className={styles.links}>
         Contacto
       </Link>
