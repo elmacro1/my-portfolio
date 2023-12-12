@@ -7,12 +7,12 @@ const Navbar = () => {
       <Link href="/#sobre-mi" className={styles.links}>
         Sobre mi
       </Link>
-      <Link href="/#proyectos" className={styles.links}>
-        Proyectos
-      </Link>
       <Link href="/#experiencia" className={styles.links}>
         Experiencia
       </Link>
+      {/* <Link href="/#proyectos" className={styles.links}>
+        Proyectos
+      </Link> */}
       <Link href="/#contacto" className={styles.links}>
         Contacto
       </Link>

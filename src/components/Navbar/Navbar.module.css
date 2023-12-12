@@ -10,8 +10,27 @@
   color: #c4c4c4;
   font-size: 1em;
   text-decoration: none;
+  position: relative;
 }
 
 .links:hover {
   color: #fff;
+}
+
+.links::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #c4c4c4;
+  transition: width 300ms ease-in-out;
+}
+
+.links:hover:before {
+  left: 0;
+  right: auto;
+  width: 100%;
+  background-color: #fff;
 }

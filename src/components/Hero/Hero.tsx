@@ -4,10 +4,10 @@ const Hero = () => {
   return (
     <section className={styles.main_container}>
       <article className={styles.content_container}>
-        <h1>Desarrollador web Full Stack</h1>
+        <h1>Hola, soy Marco!</h1>
         <h2>
-          Transforma tu visión en realidad digital. Convierte tus ideas en una
-          experiencia web cautivadora y funcional.
+          Soy un apasionado desarrollador web Full Stack que se dedica a
+          transformar ideas en experiencias digitales excepcionales.
         </h2>
       </article>
     </section>
