@@ -11,7 +11,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 40px;
+  gap: 24px;
 }
 
 .title {
@@ -27,10 +27,4 @@
   font-size: 1.3rem;
   text-align: center;
   line-height: 2rem;
-}
-
-.skills_title {
-  font-size: 1.3rem;
-  align-self: flex-start;
-  margin-top: 32px;
 }

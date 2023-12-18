@@ -8,23 +8,12 @@
   gap: 16px;
 }
 
-.social_container {
-  display: flex;
-  gap: 16px;
-}
-
-.social_container li {
-  list-style: none;
-}
-
-.social_container li a {
-  text-decoration: none;
+.name_link {
   color: #c4c4c4;
   cursor: pointer;
-  font-size: 1rem;
-  font-weight: bold;
+  text-decoration: none;
 }
 
-.social_container li a:hover {
+.name_link:hover {
   color: #fff;
 }

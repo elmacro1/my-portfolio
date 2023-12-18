@@ -19,12 +19,8 @@
   margin: 0 24px;
 }
 
-.content_container a {
-  text-decoration: none;
-}
-
 .name {
-  font-size: 1.5rem;
+  text-decoration: none;
   cursor: pointer;
   color: #c4c4c4;
   transition: scale 100ms ease-in-out;

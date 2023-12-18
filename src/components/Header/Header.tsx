@@ -6,8 +6,8 @@ const Header = () => {
   return (
     <header className={styles.main_container}>
       <div className={styles.content_container}>
-        <a href="/" >
-          <h2 className={styles.name}>Marco Galván</h2>
+        <a href="/"  className={styles.name}>
+          <h2>Marco Galván</h2>
         </a>
         <Navbar />
       </div>

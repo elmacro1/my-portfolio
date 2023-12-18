@@ -1,15 +1,15 @@
 import styles from "./Experience.module.css";
 import ExperienceCard from "../ExperienceCard/ExperienceCard";
+import { experienceData } from "./content";
 
 const Experience = () => {
   return (
     <section className={styles.main_container} id="experiencia">
-      <h2>Experience</h2>
+      <h2 className={styles.title}>Experiencia</h2>
       <article className={styles.content_container}>
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+        {experienceData.map((experience, index) => (
+          <ExperienceCard experienceInstance={experience} key={index} />
+        ))}
       </article>
     </section>
   );
