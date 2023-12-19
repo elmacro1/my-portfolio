@@ -1,9 +1,8 @@
 .main_container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .content_container {
@@ -17,8 +16,7 @@
 .title {
   font-size: 2rem;
   width: 100%;
-  margin-bottom: 80px;
-  padding-bottom: 16px;
+  margin-bottom: 64px;
   font-weight: bold;
 }
 

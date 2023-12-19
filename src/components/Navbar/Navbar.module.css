@@ -2,10 +2,14 @@
   display: flex;
 }
 
+.links_container {
+  display: flex;
+  gap: 16px;
+}
+
 .links {
   cursor: pointer;
   padding: 10px;
-  margin: 0 10px;
   font-weight: bold;
   color: #c4c4c4;
   font-size: 1rem;
@@ -33,4 +37,10 @@
   right: auto;
   width: 100%;
   background-color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  .links_container {
+    display: none;
+  }
 }

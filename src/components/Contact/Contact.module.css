@@ -1,9 +1,8 @@
 .main_container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .title {
@@ -14,13 +13,14 @@
 .content_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 64px;
 }
 
 .social_container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
