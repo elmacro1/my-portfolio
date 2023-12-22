@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import xIcon from "../../../public/assets/icons/xmark-icon.svg";
 import burguerIcon from "../../../public/assets/icons/burguer-icon.svg";
 import styles from "./Navbar.module.css";
 
@@ -21,7 +20,6 @@ const Navbar = () => {
           Contacto
         </Link>
       </div>
-      <Image src={xIcon} alt={xIcon} width={32} height={32} />
       <Image src={burguerIcon} alt={burguerIcon} width={32} height={32} />
     </nav>
   );
