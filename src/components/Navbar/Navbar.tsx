@@ -1,9 +1,14 @@
+"use client";
+import { useContext } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { SlideMenuContext } from "@/context/SlideMenu";
 import burguerIcon from "../../../public/assets/icons/burguer-icon.svg";
 import styles from "./Navbar.module.css";
 
 const Navbar = () => {
+  const { isOpen, openSlide } = useContext(SlideMenuContext);
+
   return (
     <nav className={styles.main_container}>
       <div className={styles.links_container}>
@@ -13,14 +18,20 @@ const Navbar = () => {
         <Link href="/#experiencia" className={styles.links}>
           Experiencia
         </Link>
-        {/* <Link href="/#proyectos" className={styles.links}>
-        Proyectos
-      </Link> */}
         <Link href="/#contacto" className={styles.links}>
           Contacto
         </Link>
       </div>
-      <Image src={burguerIcon} alt={burguerIcon} width={32} height={32} />
+      {!isOpen && (
+        <Image
+          src={burguerIcon}
+          alt={burguerIcon}
+          width={32}
+          height={32}
+          onClick={() => openSlide()}
+          className={styles.burguer_toggle}
+        />
+      )}
     </nav>
   );
 };

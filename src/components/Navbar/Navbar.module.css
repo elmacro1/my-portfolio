@@ -39,8 +39,17 @@
   background-color: #fff;
 }
 
+.burguer_toggle {
+  display: none;
+}
+
 @media screen and (max-width: 700px) {
   .links_container {
     display: none;
+  }
+
+  .burguer_toggle {
+    display: block;
+    cursor: pointer;
   }
 }

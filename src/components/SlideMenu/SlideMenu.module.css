@@ -1,13 +1,50 @@
 .backdrop {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  z-index: -10;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 100ms ease-in-out;
 }
 
-.content_container {
+.backdrop_open {
+  z-index: 10;
+  opacity: 1;
+}
+
+.main_container {
   display: flex;
-  background-color: #000;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  z-index: -10;
+}
+
+.close_icon {
+  align-self: flex-end;
+}
+
+.links_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+}
+
+.links {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  color: #c4c4c4;
+  font-size: 1.5rem;
+  text-decoration: none;
+  position: relative;
 }

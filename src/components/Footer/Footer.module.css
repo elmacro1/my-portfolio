@@ -17,3 +17,6 @@
 .name_link:hover {
   color: #fff;
 }
+.main_container p {
+  text-align: center;
+}
