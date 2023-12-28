@@ -13,6 +13,7 @@ export const metadata: Metadata = {
   description:
     "Marco Galvan es un desarrollador web especializado en Javascript con conocimientos en Frontend y Backend",
   creator: "Marco Galvan",
+  authors: [{ name: "Marco Galvan", url: "https://marco-galvan.vercel.app/" }],
   keywords: [
     "react",
     "next.js",
