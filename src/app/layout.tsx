@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Montserrat } from "next/font/google";
 import Header from "@/components/Header/Header";
 import SlideMenu from "@/components/SlideMenu/SlideMenu";
@@ -39,6 +40,7 @@ export default function RootLayout({
         </SlideMenuContextProvider>
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
