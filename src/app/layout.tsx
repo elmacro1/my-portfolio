@@ -16,13 +16,11 @@ export const metadata: Metadata = {
   creator: "Marco Galvan",
   authors: [{ name: "Marco Galvan", url: "https://marco-galvan.vercel.app/" }],
   keywords: [
-    "react",
-    "next.js",
-    "nodejs",
-    "javascript",
-    "typescript",
-    "css",
-    "html",
+    "Desarrollo Web",
+    "Desarrollo Full Stack",
+    "Desarrollo Movil",
+    "Desarrollo de software",
+    "Marco Galvan",
   ],
 };
 
