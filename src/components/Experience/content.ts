@@ -33,4 +33,14 @@ export const experienceData: ExperienceData[] = [
     stack:
       "HTML - CSS - JS - Typescript - React - React Native - NextJS - Firebase - Redux - Jest - Cypress - TailwindCSS - SCSS",
   },
+  {
+    title: "Comparen",
+    workingPeriod: "Enero 2024 - Actualidad",
+    url: "https://comparen.es/",
+    descriptions: [
+      "Me desempeño como colaborador freelance en el desarrollo web y móvil para distintos productos propios de la empresa.",
+      "Soy responsable de los cambios y features en productos ya existentes y nuevos de la empresa.",
+    ],
+    stack: "HTML - CSS - JS - React - React Native - NextJS",
+  },
 ];

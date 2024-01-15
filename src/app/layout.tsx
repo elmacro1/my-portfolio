@@ -12,12 +12,14 @@ const montserrat = Montserrat({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Marco Galvan",
   description:
-    "Marco Galvan es un desarrollador web especializado en Javascript con conocimientos en Frontend y Backend",
+    "Hola! Soy desarrollador Javascript con experiencia en el Front End y Back End.",
   creator: "Marco Galvan",
   authors: [{ name: "Marco Galvan", url: "https://marco-galvan.vercel.app/" }],
   keywords: [
     "Desarrollo Web",
-    "Desarrollo Full Stack",
+    "Desarrollador Javascript",
+    "Front end",
+    "Back end",
     "Desarrollo Movil",
     "Desarrollo de software",
     "Marco Galvan",

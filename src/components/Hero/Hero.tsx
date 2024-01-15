@@ -14,7 +14,7 @@ const Hero = () => {
           height={200}
         />
         <h1>Hola, soy Marco!</h1>
-        <p>Desarrollador Full Stack Javascript</p>
+        <p>Desarrollador Javascript</p>
         <p>Argentina, Santiago del Estero</p>
       </article>
     </section>
