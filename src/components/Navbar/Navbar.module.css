@@ -14,6 +14,7 @@
   color: #fff;
   font-size: 1rem;
   text-decoration: none;
+  margin: 0 20px;
 }
 
 .links {
@@ -60,9 +61,5 @@
   .burguer_toggle {
     display: block;
     cursor: pointer;
-  }
-
-  .cv {
-    margin: 0 20px;
   }
 }
