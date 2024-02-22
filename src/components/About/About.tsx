@@ -1,35 +1,34 @@
 import styles from "./About.module.css";
 
-const About = () => {
-  return (
-    <section id="sobre-mi" className={styles.main_container}>
-      <h2 className={styles.title}>Sobre mí</h2>
-      <article className={styles.content_container}>
-        <p className={styles.description}>
-          Soy Marco Antonio Galván Fernandez, casado y padre de dos hermosas
-          nenas.
-        </p>
-        <p className={styles.description}>
-          Estudié en el Bootcamp SoyHenry, actualmente continúo formándome como
-          autodidacta.
-        </p>
-        <p className={styles.description}>
-          Tengo habilidades que abarcan desde el diseño de interfaces de usuario
-          atractivas y funcionales hasta la implementación de sólidas lógicas de
-          servidor, me enfoco en la creatividad y la eficiencia a la hora de
-          proporcionar soluciones web de alta calidad.
-        </p>
-        <p className={styles.description}>
-          Mi experiencia me ha permitido perfeccionar mi capacidad para entender
-          las necesidades y traducirlas en productos finales que destacan por su
-          usabilidad y experiencias positivas para el usuario. Además, me
-          mantengo actualizado sobre las últimas tendencias y tecnologías en el
-          campo del desarrollo de software para ofrecer siempre soluciones
-          innovadoras.
-        </p>
-      </article>
-    </section>
-  );
-};
+const About = () => (
+  <section id="sobre-mi" className={styles.main_container}>
+    <h2 className={styles.title}>Sobre mí</h2>
+    <article className={styles.content_container}>
+      <p className={styles.description}>
+        Soy un desarrollador Front End con experiencia utilizando Javascript,
+        Typescript, React, Nextjs y React Native. Además, tengo experiencia en
+        el desarrollo Back End utilizando Node.js y Express.js.
+      </p>
+      <p className={styles.description}>
+        Me considero un aprendiz autodidacta que está constantemente buscando
+        nuevas formas de expandir mis conocimientos y mejorar mis habilidades.
+        He trabajado en proyectos tanto en equipos colaborativos como en
+        proyectos individuales, y mi objetivo principal es crear experiencias de
+        usuario intuitivas y atractivas.
+      </p>
+      <p className={styles.description}>
+        Además de mis habilidades técnicas, también soy un comunicador eficaz y
+        disfruto colaborar con otros desarrolladores para alcanzar resultados
+        excepcionales. Soy detallista y me enorgullezco del código limpio y bien
+        estructurado.
+      </p>
+      <p className={styles.description}>
+        En mi tiempo libre, sigo aprendiendo sobre las últimas tendencias en el
+        desarrollo web y participo activamente en la comunidad de
+        desarrolladores.
+      </p>
+    </article>
+  </section>
+);
 
 export default About;
