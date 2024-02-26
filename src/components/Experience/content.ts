@@ -8,8 +8,10 @@ export const experienceData: ExperienceData[] = [
     descriptions: [
       "Desarrollé junto a un equipo una web app desde 0 con BackOffice para Clínica Universitaria Reina Fabiola, la UI se implemento con React con Redux como manejador de estado, utilizando como bdd Firebase para alojar imágenes, tambien desarrolle desde 0 un servicio de envio de mail en NodeJS con Express",
       "Implementé un servicio en NodeJS con Express para Teléfonica España, el cuál recibe datos desde una API en SalesForce para formatearlos y ser enviados al cliente.",
+      "Participé en el desarrollo de una app móvil la cuál tiene integraciones con Google Maps, Firebase y una api en NodeJS con Express.",
     ],
-    stack: "HTML - CSS - JS - React - Redux - Firebase - NodeJS - Express",
+    stack:
+      "HTML - CSS - JS - React - React Native - Redux - Firebase - NodeJS - Express",
   },
   {
     title: "Droptek",
