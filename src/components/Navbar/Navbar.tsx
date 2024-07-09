@@ -22,7 +22,7 @@ const Navbar = () => {
           Contacto
         </Link>
       </div>
-      <a href="../../app/CV.pdf" download="CV.pdf" className={styles.cv}>
+      <a href="/src/assets/CV.pdf" download="CV.pdf" className={styles.cv}>
         Descargar CV
       </a>
       {!isOpen && (
