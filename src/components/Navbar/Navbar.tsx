@@ -22,9 +22,6 @@ const Navbar = () => {
           Contacto
         </Link>
       </div>
-      <a href="/src/assets/CV.pdf" download="CV.pdf" className={styles.cv}>
-        Descargar CV
-      </a>
       {!isOpen && (
         <Image
           src={burguerIcon}
