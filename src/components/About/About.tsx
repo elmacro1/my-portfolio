@@ -10,7 +10,7 @@ const About = () => (
         el desarrollo Back End utilizando Node.js y Express.js.
       </p>
       <p className={styles.description}>
-        Me considero un aprendiz autodidacta que está constantemente buscando
+        Me considero una persona autodidacta que está constantemente buscando
         nuevas formas de expandir mis conocimientos y mejorar mis habilidades.
         He trabajado en proyectos tanto en equipos colaborativos como en
         proyectos individuales, y mi objetivo principal es crear experiencias de
@@ -21,11 +21,6 @@ const About = () => (
         disfruto colaborar con otros desarrolladores para alcanzar resultados
         excepcionales. Soy detallista y me enorgullezco del código limpio y bien
         estructurado.
-      </p>
-      <p className={styles.description}>
-        En mi tiempo libre, sigo aprendiendo sobre las últimas tendencias en el
-        desarrollo web y participo activamente en la comunidad de
-        desarrolladores.
       </p>
     </article>
   </section>

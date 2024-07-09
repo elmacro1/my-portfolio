@@ -16,18 +16,8 @@ const Contact = () => (
           </a>
         </li>
         <li>
-          <a href="https://www.instagram.com/mgalvan_98/" target="_blank">
-            Instagram
-          </a>
-        </li>
-        <li>
           <a href="https://github.com/elmacro1" target="_blank">
             GitHub
-          </a>
-        </li>
-        <li>
-          <a href="https://twitter.com/MarcoGal4" target="_blank">
-            X
           </a>
         </li>
       </ul>

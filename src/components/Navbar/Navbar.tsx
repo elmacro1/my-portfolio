@@ -22,12 +22,8 @@ const Navbar = () => {
           Contacto
         </Link>
       </div>
-      <a
-        href="https://docs.google.com/document/d/1oNoPAWdf6bkzT3r94EwTp345SoTUvK6s7Cr3uu6DeXc/edit?usp=sharing"
-        target="_blank"
-        className={styles.cv}
-      >
-        CV
+      <a href="../../app/CV.pdf" download="CV.pdf" className={styles.cv}>
+        Descargar CV
       </a>
       {!isOpen && (
         <Image
