@@ -6,32 +6,13 @@ export const experienceData: ExperienceData[] = [
     workingPeriod: "Septiembre 2022 - Actualidad",
     url: "https://potentialitygroup.com/",
     descriptions: [
-      'Me desempeño como Desarrollador Web y Móvil para el cliente Iúnigo una empresa de Grupo San Cristobal, soy responsable de los cambios y features para la web principal "iunigo.com.ar". Desarrollada con NextJS',
-      "Soy responsable de los cambios y features para la app Iúnigo disponible en Play Store y App Store. Desarrollada con React Native",
-      "Actualmente estoy en el equipo Digitales para la implementación de nuevos productos con el sistema Guide Wire Cloud (GWC).",
+      "Actualmente me desempeño como Desarrollador Front-end en el equipo de Marketing Digital de Grupo San Cristóbal, utilizando Angular para crear y optimizar soluciones orientadas a mejorar la experiencia del cliente.",
+      "Soy responsable del mantenimiento y las actualizaciones de la web principal de Iúnigo (iunigo.com.ar), donde implemento nuevas features y mejoras utilizando Next.js.",
+      "Anteriormente forme parte del equipo de Digitales en Iúnigo para la implementación de productos con Guidewire Cloud.",
+      "También forme parte del desarrollo de la app móvil de Iúnigo, disponible en Play Store y App Store, desarrollada con React Native.",
     ],
     stack:
       "HTML - CSS - JS - Typescript - React - React Native - NextJS - Firebase - Redux - Jest - Cypress - TailwindCSS - SCSS",
-  },
-  {
-    title: "Comparen",
-    workingPeriod: "Enero 2024 - Octubre 2024",
-    url: "https://comparen.es/",
-    descriptions: [
-      "Me desempeño como colaborador freelance en el desarrollo web y móvil para distintos productos propios de la empresa.",
-      "Soy responsable de los cambios y features en productos ya existentes y nuevos de la empresa.",
-    ],
-    stack: "HTML - CSS - JS - React - React Native - NextJS",
-  },
-  {
-    title: "Droptek",
-    workingPeriod: "Abril 2022 - Septiembre 2022",
-    url: "https://www.droptek.com/",
-    descriptions: [
-      "Desarrollé para el cliente Codeicus el lado Front-end de un sistema para gestión de tareas internas, implementado en React con Redux como manejador de estado.",
-      "Participé en la implementación del sistema de seguros de vida WeCover para un cliente de Perú, desarrollador en React con Redux como manejador de estado y lenguaje Typescript.",
-    ],
-    stack: "HTML - CSS - JS - Typescript - React - Redux - SCSS",
   },
   {
     title: "Vippinn",
