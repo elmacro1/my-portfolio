@@ -1,6 +1,8 @@
-import styles from "./Hero.module.css";
 import Image from "next/image";
+
+import Logos from "../Logos/Logos";
 import profilePhoto from "../../../public/assets/profile-photo.jpeg";
+import styles from "./Hero.module.css";
 
 const Hero = () => (
   <section className={styles.main_container}>
@@ -12,9 +14,10 @@ const Hero = () => (
         width={200}
         height={200}
       />
-      <h1>Hola, soy Marco!</h1>
-      <p>Desarrollador Javascript</p>
-      <p>Argentina, Santiago del Estero</p>
+      <h1 className={styles.title}>Hola, soy Marco!</h1>
+      <p className={styles.subtitles}>Desarrollador Front End</p>
+      <p className={styles.subtitles}>Argentina, Santiago del Estero</p>
+      <Logos />
     </article>
   </section>
 );

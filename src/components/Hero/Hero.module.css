@@ -15,12 +15,12 @@
   gap: 24px;
 }
 
-.content_container h1 {
+.title {
   font-size: 2.5rem;
   font-weight: bold;
 }
 
-.content_container p {
+.subtitles {
   font-size: 1.3rem;
   text-align: center;
 }
