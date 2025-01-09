@@ -3,7 +3,7 @@ import { ExperienceData } from "./models";
 export const experienceData: ExperienceData[] = [
   {
     title: "Potentiality Group",
-    workingPeriod: "Septiembre 2022 - Enero 2024",
+    workingPeriod: "Septiembre 2022 - Enero 2025",
     url: "https://potentialitygroup.com/",
     descriptions: [
       "Desarrollo y mantenimiento de web principal “www.iunigo.com.ar” (React, Next.js, Tailwindcss).",
