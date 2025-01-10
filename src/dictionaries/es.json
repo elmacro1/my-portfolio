@@ -1,0 +1,54 @@
+{
+  "hero": {
+    "title": "Hola, soy Marco!",
+    "subtitle": "Desarrollador Front End",
+    "location": "Santiago del Estero, Argentina"
+  },
+  "nav": {
+    "about": "Sobre mi",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "first_description": "Desarrollador Front End con experiencia en Javascript, Typescript, React, Next.js, React Native y Angular. También tengo conocimientos en Node.js y Express.js para el desarrollo Back End. Busco constantemente aprender y mejorar mis habilidades.",
+    "second_description": "Mi enfoque es crear experiencias de usuario intuitivas y atractivas. Soy comunicativo, colaborativo y me enorgullezco de escribir código limpio. Siempre estoy al tanto de las últimas tendencias en desarrollo web y participo en la comunidad de desarrolladores."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "experiences": [
+      {
+        "url": "https://potentialitygroup.com/",
+        "title": "Potentiality Group",
+        "time": "Septiembre 2022 - Enero 2025",
+        "descriptions": [
+          "Desarrollo y mantenimiento de web principal “www.iunigo.com.ar” (React, Next.js, Tailwindcss).",
+          "Desarrollo y mantenimiento de app móvil portal del asegurado (Android - iOS) “Iunigo” (React Native, React Native CLI).",
+          "Desarrollo y mantenimiento de productos con Guide Wire Cloud (React, bootstrap).",
+          "Desarrollo y mantenimiento del Sitio Seguro de productores San Cristobal, Portal de Productores en Argentina y Uruguay (Angular 16+, bootstrap).",
+          "Desarrollo y mantenimiento de cotizador de seguro automotor y seguro hogar en Argentina y Uruguay (Angular +16, bootstrap)."
+        ],
+        "stack": "HTML - CSS - JS - Typescript - React - React Native - NextJS - Angular - Firebase - Redux - Jest - Cypress - TailwindCSS - SCSS"
+      },
+      {
+        "url": "https://www.vippinn.com/",
+        "title": "Vippin",
+        "time": "Noviembre 2021 - Septiembre 2022",
+        "descriptions": [
+          "Desarrollo de una web app para el cliente Clínica Reina Fabiola “www.curf.com.ar” (React, Firebase, Node.js, Express.js).",
+          "Desarrollo de una app móvil para el Ministerio de Turismo de Villa Carlos Paz, Córdoba (React Native, Expo).",
+          "Desarrollo de un servicio para parsear información y enviarla a la app cliente (Node.js, Express.js)"
+        ],
+        "stack": "HTML - CSS - JS - React - React Native - Redux - Firebase - NodeJS - Express.js"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Hablemos!"
+  },
+  "footer": {
+    "title": "Desarrollado por Marco 😎",
+    "copyright": "Todos los derechos reservados."
+  }
+}

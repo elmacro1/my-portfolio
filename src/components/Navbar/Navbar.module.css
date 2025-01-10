@@ -7,16 +7,6 @@
   gap: 16px;
 }
 
-.cv {
-  cursor: pointer;
-  padding: 10px;
-  font-weight: bold;
-  color: #fff;
-  font-size: 1rem;
-  text-decoration: none;
-  margin: 0 20px;
-}
-
 .links {
   cursor: pointer;
   padding: 10px;
@@ -51,6 +41,22 @@
 
 .burguer_toggle {
   display: none;
+}
+
+.lang_button {
+  cursor: pointer;
+  padding: 10px;
+  font-weight: bold;
+  color: #c4c4c4;
+  font-size: 1rem;
+  text-decoration: none;
+  margin-inline: 16px;
+  transition: all 0.1s;
+}
+
+.lang_button:hover {
+  scale: 1.1;
+  color: #fff;
 }
 
 @media screen and (max-width: 700px) {

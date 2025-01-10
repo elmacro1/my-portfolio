@@ -1,9 +1,14 @@
+import { Dictionary } from "@/dictionaries/dictionary.model";
 import styles from "./Contact.module.css";
 
-const Contact = () => (
+interface Props {
+  dictionary: Dictionary["contact"];
+}
+
+const Contact = ({ dictionary }: Props) => (
   <section id="contacto" className={styles.main_container}>
     <article className={styles.content_container}>
-      <p className={styles.title}>Hablemos!</p>
+      <p className={styles.title}>{dictionary.title}</p>
       <ul className={styles.social_container}>
         <li>
           <a href="mailto:elmacro11@gmail.com" target="_blank">

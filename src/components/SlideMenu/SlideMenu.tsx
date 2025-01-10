@@ -5,8 +5,13 @@ import { useContext } from "react";
 import { SlideMenuContext } from "@/context/SlideMenu";
 import closeIcon from "../../../public/assets/icons/close-icon.svg";
 import styles from "./SlideMenu.module.css";
+import { Dictionary } from "@/dictionaries/dictionary.model";
 
-const SlideMenu = () => {
+interface Props {
+  dictionary: Dictionary["nav"];
+}
+
+const SlideMenu = ({ dictionary }: Props) => {
   const { isOpen, closeSlide } = useContext(SlideMenuContext);
 
   return (
@@ -26,21 +31,21 @@ const SlideMenu = () => {
             className={styles.links}
             onClick={() => closeSlide()}
           >
-            Sobre mi
+            {dictionary.about}
           </Link>
           <Link
             href="/#experiencia"
             className={styles.links}
             onClick={() => closeSlide()}
           >
-            Experiencia
+            {dictionary.experience}
           </Link>
           <Link
             href="/#contacto"
             className={styles.links}
             onClick={() => closeSlide()}
           >
-            Contacto
+            {dictionary.contact}
           </Link>
         </div>
       </div>

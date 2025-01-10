@@ -1,11 +1,14 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { Montserrat } from "next/font/google";
+
+import type { Dictionary } from "@/dictionaries/dictionary.model";
 import Header from "@/components/Header/Header";
 import SlideMenu from "@/components/SlideMenu/SlideMenu";
 import SlideMenuContextProvider from "@/context/SlideMenu";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
+import { redirect } from "next/navigation";
 
 const montserrat = Montserrat({ subsets: ["latin"] });
 
@@ -30,20 +33,30 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
-  children,
-}: {
+interface Props {
   children: React.ReactNode;
-}) {
+  params: { lang: string };
+}
+
+export default async function RootLayout(props: Props) {
+  const {
+    children,
+    params: { lang },
+  } = props;
+
+  const dictionary = await import(`@/dictionaries/${lang}.json`)
+    .then((m) => m.default as Dictionary)
+    .catch(() => redirect("/es"));
+
   return (
-    <html lang="es">
+    <html lang={lang}>
       <body className={montserrat.className}>
         <SlideMenuContextProvider>
-          <Header />
-          <SlideMenu />
+          <Header dictionary={dictionary.nav} />
+          <SlideMenu dictionary={dictionary.nav} />
         </SlideMenuContextProvider>
         {children}
-        <Footer />
+        <Footer dictionary={dictionary.footer} />
         <Analytics />
       </body>
     </html>

@@ -1,21 +1,24 @@
 "use client";
+
+import Link from "next/link";
+
+import { Dictionary } from "@/dictionaries/dictionary.model";
 import styles from "./Footer.module.css";
 
-const Footer = () => {
+interface Props {
+  dictionary: Dictionary["footer"];
+}
+
+const Footer = ({ dictionary }: Props) => {
   const date = new Date();
   const year = date.getFullYear();
 
   return (
     <footer className={styles.main_container}>
-      <p>
-        Desarrollado por{" "}
-        <a href="/" className={styles.name_link}>
-          <strong>Marco 😎</strong>
-        </a>
-      </p>
-      <p>
-        {`Copyright © ${year} Marco Galván. Todos los derechos reservados.`}
-      </p>
+      <Link href="#inicio" className={styles.name_link}>
+        {dictionary.title}
+      </Link>
+      <p>{`Copyright © ${year} Marco Galván. ${dictionary.copyright}`}</p>
     </footer>
   );
 };

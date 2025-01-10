@@ -1,21 +1,16 @@
+import type { Dictionary } from "@/dictionaries/dictionary.model";
 import styles from "./About.module.css";
 
-const About = () => (
+interface Props {
+  dictionary: Dictionary["about"];
+}
+
+const About = ({ dictionary }: Props) => (
   <section id="sobre-mi" className={styles.main_container}>
-    <h2 className={styles.title}>Sobre mí</h2>
+    <h2 className={styles.title}>{dictionary.title}</h2>
     <article className={styles.content_container}>
-      <p className={styles.description}>
-        Desarrollador Front End con experiencia en Javascript, Typescript,
-        React, Next.js, React Native y Angular. También tengo conocimientos en
-        Node.js y Express.js para el desarrollo Back End. Busco constantemente
-        aprender y mejorar mis habilidades.
-      </p>
-      <p className={styles.description}>
-        Mi enfoque es crear experiencias de usuario intuitivas y atractivas. Soy
-        comunicativo, colaborativo y me enorgullezco de escribir código limpio.
-        Siempre estoy al tanto de las últimas tendencias en desarrollo web y
-        participo en la comunidad de desarrolladores.
-      </p>
+      <p className={styles.description}>{dictionary.first_description}</p>
+      <p className={styles.description}>{dictionary.second_description}</p>
     </article>
   </section>
 );

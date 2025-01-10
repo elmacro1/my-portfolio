@@ -1,13 +1,17 @@
-import styles from "./Experience.module.css";
+import type { Dictionary } from "@/dictionaries/dictionary.model";
 import ExperienceCard from "../ExperienceCard/ExperienceCard";
-import { experienceData } from "./content";
+import styles from "./Experience.module.css";
 
-const Experience = () => (
+interface Props {
+  dictionary: Dictionary["experience"];
+}
+
+const Experience = ({ dictionary }: Props) => (
   <section className={styles.main_container} id="experiencia">
-    <h2 className={styles.title}>Experiencia</h2>
+    <h2 className={styles.title}>{dictionary.title}</h2>
     <article className={styles.content_container}>
-      {experienceData.map((experience, index) => (
-        <ExperienceCard experienceInstance={experience} key={index} />
+      {dictionary.experiences.map((experience, index) => (
+        <ExperienceCard dictionary={experience} key={index} />
       ))}
     </article>
   </section>
