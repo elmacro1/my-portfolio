@@ -38,3 +38,13 @@
     opacity: 1;
   }
 }
+
+@media (width < 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitles {
+    font-size: 1rem;
+  }
+}

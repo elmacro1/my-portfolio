@@ -42,3 +42,21 @@
   color: #fff;
   scale: 1.1;
 }
+
+@media (width < 768px) {
+  .content_container {
+    gap: 32px;
+  }
+
+  .social_container {
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .social_container li a {
+    font-size: 1rem;
+  }
+}

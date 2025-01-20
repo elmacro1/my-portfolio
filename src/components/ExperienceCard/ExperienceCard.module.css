@@ -34,15 +34,39 @@
   gap: 8px;
 }
 
-.title_container .title {
+.title {
   font-size: 1.1rem;
   font-weight: bold;
 }
 
+.working_period {
+  font-size: 1rem;
+}
+
 .description {
+  font-size: 1rem;
   line-height: 1.2rem;
 }
 
 .stack {
+  font-size: 1rem;
   font-weight: bold;
+}
+
+@media (width < 768px) {
+  .title {
+    font-size: 1rem;
+  }
+
+  .working_period {
+    font-size: 0.75rem;
+  }
+
+  .description {
+    font-size: 0.75rem;
+  }
+
+  .stack {
+    font-size: 0.75rem;
+  }
 }

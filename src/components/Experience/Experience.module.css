@@ -18,3 +18,9 @@
   margin-bottom: 64px;
   font-weight: bold;
 }
+
+@media (width < 768px) {
+  .title {
+    font-size: 1.5rem;
+  }
+}
