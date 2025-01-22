@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Hola, soy Marco!",
-    "subtitle": "Desarrollador Front End",
+    "subtitle": "Desarrollador Full Stack",
     "location": "Santiago del Estero, Argentina"
   },
   "nav": {
@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "Sobre mí",
-    "first_description": "Desarrollador Front End con experiencia en Javascript, Typescript, React, Next.js, React Native y Angular. También tengo conocimientos en Node.js y Express.js para el desarrollo Back End. Busco constantemente aprender y mejorar mis habilidades.",
+    "first_description": "Desarrollador Full Stack con experiencia en Javascript, Typescript, React, Next.js, React Native y Angular. También tengo conocimientos en Node.js y Express.js para el desarrollo Back End. Busco constantemente aprender y mejorar mis habilidades.",
     "second_description": "Mi enfoque es crear experiencias de usuario intuitivas y atractivas. Soy comunicativo, colaborativo y me enorgullezco de escribir código limpio. Siempre estoy al tanto de las últimas tendencias en desarrollo web y participo en la comunidad de desarrolladores."
   },
   "experience": {

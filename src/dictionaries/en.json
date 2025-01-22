@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Hello, I'm Marco!",
-    "subtitle": "Front End Developer",
+    "subtitle": "Full Stack Developer",
     "location": "Santiago del Estero, Argentina"
   },
   "nav": {
@@ -12,7 +12,7 @@
   },
   "about": {
     "title": "About Me",
-    "first_description": "Front End Developer with experience in JavaScript, TypeScript, React, Next.js, React Native, and Angular. I also have knowledge in Node.js and Express.js for Back End development. I am constantly seeking to learn and improve my skills.",
+    "first_description": "Full Stack Developer with experience in JavaScript, TypeScript, React, Next.js, React Native, and Angular. I also have knowledge in Node.js and Express.js for Back End development. I am constantly seeking to learn and improve my skills.",
     "second_description": "My focus is on creating intuitive and engaging user experiences. I am communicative, collaborative, and take pride in writing clean code. I always stay up-to-date with the latest web development trends and actively participate in the developer community."
   },
   "experience": {
@@ -29,7 +29,7 @@
           "Developed and maintained the secure producer site for San Cristobal, Producer Portal in Argentina and Uruguay (Angular 16+, bootstrap).",
           "Developed and maintained an automotive and home insurance quote tool in Argentina and Uruguay (Angular 16+, bootstrap)."
         ],
-        "stack": "HTML - CSS - JS - TypeScript - React - React Native - NextJS - Angular - Firebase - Redux - Jest - Cypress - TailwindCSS - SCSS"
+        "stack": "HTML - CSS - JS - TypeScript - React - React Native - Next.js - Angular - Firebase - Redux - Jest - Cypress - TailwindCSS - SCSS"
       },
       {
         "url": "https://www.vippinn.com/",
@@ -40,7 +40,7 @@
           "Developed a mobile app for the Ministry of Tourism of Villa Carlos Paz, Córdoba (React Native, Expo).",
           "Developed a service to parse information and send it to the client app (Node.js, Express.js)."
         ],
-        "stack": "HTML - CSS - JS - React - React Native - Redux - Firebase - NodeJS - Express.js"
+        "stack": "HTML - CSS - JS - React - React Native - Redux - Firebase - Node.js - Express.js"
       }
     ]
   },
