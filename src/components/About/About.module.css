@@ -21,17 +21,18 @@
 }
 
 .description {
-  width: 80%;
+  width: 100%;
   font-size: 1.3rem;
   line-height: 2rem;
 }
 
 @media (width < 768px) {
   .title {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 32px;
   }
 
   .description {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 }

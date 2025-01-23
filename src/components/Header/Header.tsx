@@ -13,7 +13,7 @@ const Header = ({ dictionary }: Props) => (
   <header className={styles.main_container}>
     <div className={styles.content_container}>
       <Link href="#inicio" className={styles.name}>
-        <h2>Marco Galván</h2>
+        <h2 className={styles.name}>Marco Galván</h2>
       </Link>
       <Navbar dictionary={dictionary} />
     </div>

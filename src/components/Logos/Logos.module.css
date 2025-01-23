@@ -1,19 +1,35 @@
 .main_container {
   display: flex;
+  margin-inline: auto;
+  gap: 3rem;
+}
+
+.slider {
+  display: flex;
   justify-content: space-around;
   align-items: center;
+  gap: 3rem;
   margin-top: 2rem;
+  animation: scrolling 50s linear infinite;
+}
+
+.main_container:hover .slider {
+  animation-play-state: paused;
 }
 
 .logo_container {
-  width: 100px;
-  height: 100px;
   display: flex;
+  height: 150px;
+  width: 100px;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 0.75rem;
   padding: 0.5rem;
   transition: all 0.3s;
+}
+
+.logo {
+  height: 60px;
 }
 
 .label {
@@ -30,8 +46,30 @@
 }
 
 @media (width < 700px) {
+  .main_container {
+    gap: 0.5rem;
+  }
+
+  .slider {
+    margin: 0;
+    gap: 0.5rem;
+  }
+
   .logo_container {
-    width: 60px;
-    height: 60px;
+    height: 120px;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
