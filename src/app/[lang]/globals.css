@@ -1,7 +1,13 @@
 :root {
-  background-color: Canvas;
-  color: CanvasText;
+  background-color: #0a0a0a;
+  color: #fff;
   color-scheme: dark;
+  --geist-background: #0a0a0a;
+  --geist-foreground: #ffffff;
+  --geist-muted: #888888;
+  --geist-accent: #0070f3;
+  --geist-accent-light: #3291ff;
+  --geist-border: #1a1a1a;
 }
 
 *,

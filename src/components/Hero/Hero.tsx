@@ -1,8 +1,4 @@
-import Image from "next/image";
-
 import type { Dictionary } from "@/dictionaries/dictionary.model";
-import Logos from "../Logos/Logos";
-import profilePhoto from "../../../public/assets/profile-photo.jpeg";
 import styles from "./Hero.module.css";
 
 interface Props {
@@ -10,20 +6,27 @@ interface Props {
 }
 
 const Hero = ({ dictionary }: Props) => (
-  <section className={styles.main_container} id="inicio">
-    <article className={styles.content_container}>
-      <Image
-        src={profilePhoto}
-        alt="profile photo"
-        className={styles.profile_photo}
-        width={200}
-        height={200}
-      />
-      <h1 className={styles.title}>{dictionary.title}</h1>
-      <p className={styles.subtitles}>{dictionary.subtitle}</p>
-      <p className={styles.subtitles}>{dictionary.location}</p>
-      <Logos />
-    </article>
+  <section className={styles.hero}>
+    <div className={styles.container}>
+      <h1 className={styles.title}>
+        Desarrollo web profesional para negocios y equipos de tecnología
+      </h1>
+      <p className={styles.subtitle}>
+        Ayudo a emprendedores y empresas a crear sitios web modernos, rápidos y
+        pensados para crecer.
+        <br />
+        Ya sea que necesites una web completa o sumar un desarrollador freelance
+        a tu equipo, contá conmigo.
+      </p>
+      <div className={styles.buttons}>
+        <a href="#servicios" className={styles.primaryButton}>
+          Ver servicios
+        </a>
+        <a href="https://wa.me/tu-numero" className={styles.secondaryButton}>
+          Hablemos
+        </a>
+      </div>
+    </div>
   </section>
 );
 

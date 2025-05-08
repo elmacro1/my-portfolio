@@ -59,7 +59,7 @@
   color: #fff;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .links_container {
     display: none;
   }
