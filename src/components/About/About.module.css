@@ -1,4 +1,4 @@
-.main_container {
+/* .main_container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -34,5 +34,42 @@
 
   .description {
     font-size: 0.75rem;
+  }
+} */
+
+.about {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  padding: 5rem 1.5rem;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.text {
+  font-size: 1.125rem;
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .text {
+    font-size: 1rem;
   }
 }

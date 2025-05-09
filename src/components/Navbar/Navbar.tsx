@@ -7,13 +7,8 @@ import { usePathname } from "next/navigation";
 import { SlideMenuContext } from "@/context/SlideMenu";
 import burguerIcon from "../../../public/assets/icons/burguer-icon.svg";
 import styles from "./Navbar.module.css";
-import { Dictionary } from "@/dictionaries/dictionary.model";
 
-interface Props {
-  dictionary: Dictionary["nav"];
-}
-
-const Navbar = ({ dictionary }: Props) => {
+const Navbar = () => {
   const { isOpen, openSlide } = useContext(SlideMenuContext);
   const pathname = usePathname();
 
@@ -24,30 +19,28 @@ const Navbar = ({ dictionary }: Props) => {
   return (
     <nav className={styles.main_container}>
       <div className={styles.links_container}>
-        <Link href="#sobre-mi" className={styles.links}>
-          {dictionary.about}
+        <Link href="#servicios" className={styles.links}>
+          Servicios
         </Link>
-        <Link href="#experiencia" className={styles.links}>
-          {dictionary.experience}
+        <Link href="#proyectos" className={styles.links}>
+          Proyectos
+        </Link>
+        <Link href="#sobre-mi" className={styles.links}>
+          Sobre mi
         </Link>
         <Link href="#contacto" className={styles.links}>
-          {dictionary.contact}
+          Contacto
         </Link>
       </div>
       {!isOpen && (
-        <>
-          <Link href={`/${switchLang}`} className={styles.lang_button}>
-            {switchLang.toUpperCase()}
-          </Link>
-          <Image
-            src={burguerIcon}
-            alt={burguerIcon}
-            width={32}
-            height={32}
-            onClick={() => openSlide()}
-            className={styles.burguer_toggle}
-          />
-        </>
+        <Image
+          src={burguerIcon}
+          alt={burguerIcon}
+          width={32}
+          height={32}
+          onClick={() => openSlide()}
+          className={styles.burguer_toggle}
+        />
       )}
     </nav>
   );

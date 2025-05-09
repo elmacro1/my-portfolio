@@ -1,17 +1,13 @@
 "use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useContext } from "react";
 import { SlideMenuContext } from "@/context/SlideMenu";
 import closeIcon from "../../../public/assets/icons/close-icon.svg";
 import styles from "./SlideMenu.module.css";
-import { Dictionary } from "@/dictionaries/dictionary.model";
 
-interface Props {
-  dictionary: Dictionary["nav"];
-}
-
-const SlideMenu = ({ dictionary }: Props) => {
+const SlideMenu = () => {
   const { isOpen, closeSlide } = useContext(SlideMenuContext);
 
   return (
@@ -27,25 +23,32 @@ const SlideMenu = ({ dictionary }: Props) => {
         />
         <div className={styles.links_container}>
           <Link
+            href="/#servicios"
+            className={styles.links}
+            onClick={() => closeSlide()}
+          >
+            Servicios
+          </Link>
+          <Link
+            href="/#proyectos"
+            className={styles.links}
+            onClick={() => closeSlide()}
+          >
+            Proyectos
+          </Link>
+          <Link
             href="/#sobre-mi"
             className={styles.links}
             onClick={() => closeSlide()}
           >
-            {dictionary.about}
-          </Link>
-          <Link
-            href="/#experiencia"
-            className={styles.links}
-            onClick={() => closeSlide()}
-          >
-            {dictionary.experience}
+            Sobre mi
           </Link>
           <Link
             href="/#contacto"
             className={styles.links}
             onClick={() => closeSlide()}
           >
-            {dictionary.contact}
+            Contacto
           </Link>
         </div>
       </div>

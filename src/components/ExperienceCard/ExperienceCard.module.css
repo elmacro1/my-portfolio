@@ -1,14 +1,15 @@
 .main_container {
+  background: #111;
   flex-basis: 360px;
   flex-grow: 1;
   flex-shrink: 1;
   border-radius: 16px;
-  box-shadow: 0px 0px 4px 0px rgba(256, 256, 256, 1);
+  border: 1px solid #1a1a1a;
   transition: all 200ms ease-in-out;
 }
 
 .main_container:hover {
-  box-shadow: 0px 0px 16px 0px rgba(256, 256, 256, 0.75);
+  border-color: #333;
 }
 
 .content_container {

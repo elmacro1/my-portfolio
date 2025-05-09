@@ -17,6 +17,7 @@
   width: 100%;
   margin-bottom: 64px;
   font-weight: bold;
+  text-align: center;
 }
 
 @media (width < 768px) {

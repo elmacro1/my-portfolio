@@ -2,23 +2,18 @@
 
 import Link from "next/link";
 
-import { Dictionary } from "@/dictionaries/dictionary.model";
 import styles from "./Footer.module.css";
 
-interface Props {
-  dictionary: Dictionary["footer"];
-}
-
-const Footer = ({ dictionary }: Props) => {
+const Footer = () => {
   const date = new Date();
   const year = date.getFullYear();
 
   return (
     <footer className={styles.main_container}>
       <Link href="#inicio" className={styles.name_link}>
-        {dictionary.title}
+        Desarrollado por Marco 😎
       </Link>
-      <p>{`Copyright © ${year} Marco Galván. ${dictionary.copyright}`}</p>
+      <p>{`Copyright © ${year} Marco Galván. Todos los derechos reservados.`}</p>
     </footer>
   );
 };

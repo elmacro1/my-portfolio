@@ -1,5 +1,5 @@
 import styles from "./ExperienceCard.module.css";
-import { ExperienceItem } from "@/dictionaries/dictionary.model";
+import { ExperienceItem } from "@/types/experience.model";
 
 interface Props {
   dictionary: ExperienceItem;

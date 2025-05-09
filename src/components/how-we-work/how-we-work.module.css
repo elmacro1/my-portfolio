@@ -1,0 +1,66 @@
+.howWeWork {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 5rem 1.5rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.process {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.processItemCard {
+  background: #111;
+  border-radius: 8px;
+  padding: 2rem;
+  width: calc(33% - 2rem);
+  border: 1px solid #1a1a1a;
+  transition: all 0.3s ease-in-out;
+}
+
+.processItemCard:hover {
+  border-color: #333;
+}
+
+.processItemCard strong {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.processItemCard p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .processItemCard {
+    width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 480px) {
+  .processItemCard {
+    width: 100%;
+  }
+}

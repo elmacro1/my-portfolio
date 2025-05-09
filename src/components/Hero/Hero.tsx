@@ -1,11 +1,6 @@
-import type { Dictionary } from "@/dictionaries/dictionary.model";
 import styles from "./Hero.module.css";
 
-interface Props {
-  dictionary: Dictionary["hero"];
-}
-
-const Hero = ({ dictionary }: Props) => (
+const Hero = () => (
   <section className={styles.hero}>
     <div className={styles.container}>
       <h1 className={styles.title}>
@@ -22,7 +17,11 @@ const Hero = ({ dictionary }: Props) => (
         <a href="#servicios" className={styles.primaryButton}>
           Ver servicios
         </a>
-        <a href="https://wa.me/tu-numero" className={styles.secondaryButton}>
+        <a
+          href="https://wa.me/+5493855205726"
+          target="__blank"
+          className={styles.secondaryButton}
+        >
           Hablemos
         </a>
       </div>

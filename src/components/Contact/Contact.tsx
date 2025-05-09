@@ -1,32 +1,20 @@
-import { Dictionary } from "@/dictionaries/dictionary.model";
 import styles from "./Contact.module.css";
 
-interface Props {
-  dictionary: Dictionary["contact"];
-}
-
-const Contact = ({ dictionary }: Props) => (
-  <section id="contacto" className={styles.main_container}>
-    <article className={styles.content_container}>
-      <p className={styles.title}>{dictionary.title}</p>
-      <ul className={styles.social_container}>
-        <li>
-          <a href="mailto:elmacro11@gmail.com" target="_blank">
-            Mail
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/marcoagalvan/" target="_blank">
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/elmacro1" target="_blank">
-            GitHub
-          </a>
-        </li>
-      </ul>
-    </article>
+const Contact = () => (
+  <section className={styles.contact} id="contacto">
+    <div className={styles.container}>
+      <h2 className={styles.title}>¿Listo para transformar tu negocio?</h2>
+      <p className={styles.description}>
+        Si estás buscando desarrollar tu próximo producto digital, mejorar tu
+        infraestructura o necesitas un colaborador en tu equipo, ¡estoy aquí
+        para ayudarte!
+      </p>
+      <div className={styles.ctaContainer}>
+        <a href="mailto:elmacro11@gmail.com" className={styles.primaryButton}>
+          ¡Contáctame ahora!
+        </a>
+      </div>
+    </div>
   </section>
 );
 
