@@ -16,6 +16,7 @@
   animation: fade-in linear both;
   animation-timeline: view();
   animation-range: entry 40% cover 50%;
+  scroll-snap-type: y mandatory;
 }
 
 @keyframes fade-in {

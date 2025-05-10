@@ -1,44 +1,5 @@
-/* .main_container {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.content_container {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.title {
-  font-size: 2rem;
-  width: 100%;
-  margin-bottom: 64px;
-  font-weight: bold;
-}
-
-.description {
-  width: 100%;
-  font-size: 1.3rem;
-  line-height: 2rem;
-}
-
-@media (width < 768px) {
-  .title {
-    font-size: 1.25rem;
-    margin-bottom: 32px;
-  }
-
-  .description {
-    font-size: 0.75rem;
-  }
-} */
-
 .about {
-  height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: center;

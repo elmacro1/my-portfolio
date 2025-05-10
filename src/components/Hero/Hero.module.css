@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  height: 100dvh;
   background: var(--geist-background);
   color: var(--geist-foreground);
   padding: 6rem 1.5rem;
