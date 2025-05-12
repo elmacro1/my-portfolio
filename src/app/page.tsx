@@ -11,16 +11,14 @@ import styles from "./page.module.css";
 export default async function Home() {
   return (
     <main className={styles.main}>
-      <div className={styles.content_container}>
-        <Hero />
-        <Services />
-        <Portfolio />
-        <About />
-        <Benefits />
-        <Experience />
-        <HowWeWork />
-        <Contact />
-      </div>
+      <Hero />
+      <Services />
+      <Portfolio />
+      <About />
+      <Benefits />
+      <Experience />
+      <HowWeWork />
+      <Contact />
     </main>
   );
 }

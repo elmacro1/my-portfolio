@@ -1,22 +1,20 @@
 .main {
   width: 100%;
   display: flex;
-  justify-content: center;
-}
-
-.content_container {
-  width: 1280px;
-  margin: 0 24px;
-  display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 5rem;
+  margin: auto;
 }
 
-.content_container section:not(:first-child) {
+.main section {
+  max-width: 1280px;
+}
+
+.main section:not(:first-child) {
   animation: fade-in linear both;
   animation-timeline: view();
-  animation-range: entry 40% cover 50%;
-  scroll-snap-type: y mandatory;
+  animation-range: entry 80% cover 40%;
 }
 
 @keyframes fade-in {
