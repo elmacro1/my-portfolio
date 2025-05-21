@@ -7,10 +7,11 @@ import Contact from "@/components/Contact/Contact";
 import styles from "./page.module.css";
 
 interface Props {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }
 
-export default async function Home({ params: { lang } }: Props) {
+export default async function Home({ params }: Props) {
+  const { lang } = await params;
   const dictionary = await import(`@/dictionaries/${lang}.json`).then(
     (m) => m.default as Dictionary
   );

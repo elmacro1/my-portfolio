@@ -35,14 +35,13 @@ export const metadata: Metadata = {
 
 interface Props {
   children: React.ReactNode;
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 }
 
 export default async function RootLayout(props: Props) {
-  const {
-    children,
-    params: { lang },
-  } = props;
+  const { children, params } = props;
+
+  const { lang } = await params;
 
   const dictionary = await import(`@/dictionaries/${lang}.json`)
     .then((m) => m.default as Dictionary)
