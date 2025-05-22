@@ -11,24 +11,51 @@ import { redirect } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Marco Galvan",
+  title: "Marco Galvan | Desarrollador Full Stack especializado en JavaScript",
   description:
-    "Hola! Soy desarrollador Front End con experiencia en React, Next.js, React Native y Angular.",
+    "Soy Marco Galvan, desarrollador full stack con experiencia en frontend y backend. Trabajo con tecnologías modernas como React, Next.js, Node.js, Express, Python, FastAPI y bases de datos SQL y NoSQL. Creo soluciones web y móviles eficientes y escalables.",
   creator: "Marco Galvan",
-  authors: [{ name: "Marco Galvan", url: "https://marco-galvan.vercel.app/" }],
+  authors: [{ name: "Marco Galvan", url: "https://mgalvan.online/" }],
   keywords: [
-    "Desarrollo Web",
-    "Desarrollador Javascript",
-    "Front end",
-    "Back end",
-    "Desarrollo Movil",
-    "Desarrollo de software",
     "Marco Galvan",
-    "Next.js",
+    "Desarrollador Full Stack",
+    "Desarrollo Web",
     "React",
+    "Next.js",
+    "Node.js",
+    "Express",
     "React Native",
     "Angular",
+    "Python",
+    "FastAPI",
+    "JavaScript",
+    "TypeScript",
+    "Frontend",
+    "Backend",
+    "Desarrollo de software",
+    "Bases de datos",
+    "API REST",
+    "Desarrollador JavaScript",
+    "Full Stack Developer",
+    "Desarrollador Freelance",
   ],
+  openGraph: {
+    title:
+      "Marco Galvan | Desarrollador Full Stack especializado en JavaScript",
+    description:
+      "Conocé mi trabajo como desarrollador full stack. Experiencia en React, Next.js, Node.js, Express y más. Desarrollo soluciones web y móviles a medida.",
+    url: "https://mgalvan.online/",
+    siteName: "Marco Galvan",
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Marco Galvan | Desarrollador Full Stack",
+    description:
+      "Desarrollo web y móvil con tecnologías modernas como React, Next.js y Node.js.",
+    creator: "@MarcoGal4",
+  },
 };
 
 interface Props {
