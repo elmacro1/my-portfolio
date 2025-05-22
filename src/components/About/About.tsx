@@ -6,7 +6,7 @@ interface Props {
 }
 
 const About = ({ dictionary }: Props) => (
-  <section id="sobre-mi" className={styles.main_container}>
+  <section className={styles.main_container}>
     <h2 className={styles.title}>{dictionary.title}</h2>
     <article className={styles.content_container}>
       {dictionary.descriptions.map((desc, index) => (

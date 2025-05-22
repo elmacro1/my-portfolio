@@ -35,10 +35,6 @@
   animation: scrolling 50s linear infinite;
 }
 
-.main_container:hover .slider {
-  animation-play-state: paused;
-}
-
 .logo_container {
   display: flex;
   height: 110px;
