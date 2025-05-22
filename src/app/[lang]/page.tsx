@@ -23,7 +23,7 @@ export default async function Home({ params }: Props) {
         <About dictionary={dictionary.about} />
         <Experience dictionary={dictionary.experience} />
         {/* <Projects /> */}
-        <Contact dictionary={dictionary.contact} />
+        {/* <Contact dictionary={dictionary.contact} /> */}
       </div>
     </main>
   );

@@ -5,7 +5,9 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { SlideMenuContext } from "@/context/SlideMenu";
-import burguerIcon from "../../../public/assets/icons/burguer-icon.svg";
+import xIcon from "@/../public/assets/logos/x_dark.svg";
+import linkedInIcon from "@/../public/assets/logos/linkedin.svg";
+import githubIcon from "@/../public/assets/logos/github-dark.svg";
 import styles from "./Navbar.module.css";
 import { Dictionary } from "@/dictionaries/dictionary.model";
 
@@ -25,30 +27,23 @@ const Navbar = ({ dictionary }: Props) => {
     <nav className={styles.main_container}>
       <div className={styles.links_container}>
         <Link href="#sobre-mi" className={styles.links}>
-          {dictionary.about}
+          <Image src={xIcon} alt="x icon" width={16} height={16} />
         </Link>
         <Link href="#experiencia" className={styles.links}>
-          {dictionary.experience}
+          <Image
+            src={linkedInIcon}
+            alt="linkedin icon"
+            width={16}
+            height={16}
+          />
         </Link>
         <Link href="#contacto" className={styles.links}>
-          {dictionary.contact}
+          <Image src={githubIcon} alt="github icon" width={16} height={16} />
+        </Link>
+        <Link href={`/${switchLang}`} className={styles.lang_button}>
+          {switchLang.toUpperCase()}
         </Link>
       </div>
-      {!isOpen && (
-        <>
-          <Link href={`/${switchLang}`} className={styles.lang_button}>
-            {switchLang.toUpperCase()}
-          </Link>
-          <Image
-            src={burguerIcon}
-            alt={burguerIcon}
-            width={32}
-            height={32}
-            onClick={() => openSlide()}
-            className={styles.burguer_toggle}
-          />
-        </>
-      )}
     </nav>
   );
 };

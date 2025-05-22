@@ -1,12 +1,11 @@
 .main_container {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -14,7 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 32px;
 }
 
 .social_container {
@@ -33,19 +32,18 @@
   text-decoration: none;
   color: #c4c4c4;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold;
-  transition: scale 100ms ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .social_container li a:hover {
   color: #fff;
-  scale: 1.1;
 }
 
 @media (width < 768px) {
   .content_container {
-    gap: 32px;
+    gap: 24px;
   }
 
   .social_container {
@@ -53,7 +51,7 @@
   }
 
   .title {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .social_container li a {

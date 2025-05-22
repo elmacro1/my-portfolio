@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
-import { Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 
 import type { Dictionary } from "@/dictionaries/dictionary.model";
 import Header from "@/components/Header/Header";
@@ -10,7 +10,7 @@ import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import { redirect } from "next/navigation";
 
-const montserrat = Montserrat({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Marco Galvan",
@@ -49,7 +49,7 @@ export default async function RootLayout(props: Props) {
 
   return (
     <html lang={lang}>
-      <body className={montserrat.className}>
+      <body className={inter.className}>
         <SlideMenuContextProvider>
           <Header dictionary={dictionary.nav} />
           <SlideMenu dictionary={dictionary.nav} />

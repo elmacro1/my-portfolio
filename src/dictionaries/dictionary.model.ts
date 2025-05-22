@@ -11,6 +11,7 @@ export interface Dictionary {
     title: string;
     subtitle: string;
     location: string;
+    button: string;
   };
   nav: {
     about: string;
@@ -20,8 +21,7 @@ export interface Dictionary {
   };
   about: {
     title: string;
-    first_description: string;
-    second_description: string;
+    descriptions: string[];
   };
   experience: {
     title: string;

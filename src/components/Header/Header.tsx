@@ -12,8 +12,8 @@ interface Props {
 const Header = ({ dictionary }: Props) => (
   <header className={styles.main_container}>
     <div className={styles.content_container}>
-      <Link href="#inicio" className={styles.name}>
-        <h2 className={styles.name}>Marco Galván</h2>
+      <Link href="#inicio" className={styles.name_link}>
+        <h2 className={styles.name}>MG</h2>
       </Link>
       <Navbar dictionary={dictionary} />
     </div>

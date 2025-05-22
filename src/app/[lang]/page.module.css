@@ -5,11 +5,15 @@
 }
 
 .content_container {
-  width: 1280px;
+  width: 1024px;
   margin: 0 24px;
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.content_container section {
+  margin-bottom: 32px;
 }
 
 .content_container section:not(:first-child) {

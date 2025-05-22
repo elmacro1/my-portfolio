@@ -5,38 +5,21 @@
 .links_container {
   display: flex;
   gap: 16px;
+  align-items: center;
 }
 
 .links {
   cursor: pointer;
-  padding: 10px;
-  font-weight: bold;
-  color: #c4c4c4;
-  font-size: 1rem;
-  text-decoration: none;
-  position: relative;
+  padding: 8px;
+  border-radius: 8px;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(1698%)
+    hue-rotate(212deg) brightness(106%) contrast(54%);
+  transition: all 0.2s ease-in-out;
 }
 
 .links:hover {
-  color: #fff;
-}
-
-.links::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 0;
-  height: 2px;
-  background-color: #c4c4c4;
-  transition: width 300ms ease-in-out;
-}
-
-.links:hover:before {
-  left: 0;
-  right: auto;
-  width: 100%;
-  background-color: #fff;
+  filter: brightness(0) saturate(100%) invert(100%) sepia(81%) saturate(47%)
+    hue-rotate(191deg) brightness(108%) contrast(101%);
 }
 
 .burguer_toggle {

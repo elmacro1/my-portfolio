@@ -4,6 +4,28 @@
   gap: 3rem;
 }
 
+.main_container::after {
+  background: linear-gradient(to right, Canvas 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 200px;
+  position: absolute;
+  width: 120px;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+}
+
+.main_container::before {
+  background: linear-gradient(to left, Canvas 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 200px;
+  position: absolute;
+  width: 120px;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+}
+
 .slider {
   display: flex;
   justify-content: space-around;
@@ -19,17 +41,17 @@
 
 .logo_container {
   display: flex;
-  height: 150px;
+  height: 110px;
   width: 100px;
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
   padding: 0.5rem;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .logo {
-  height: 60px;
+  height: 40px;
 }
 
 .label {
@@ -62,6 +84,10 @@
   .logo {
     width: 40px;
     height: 40px;
+  }
+
+  .label {
+    font-size: 0.75rem;
   }
 }
 

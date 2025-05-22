@@ -34,6 +34,10 @@ export const logos: Logo[] = [
     image: "/assets/logos/expressjs_dark.svg",
   },
   {
+    label: "Python",
+    image: "/assets/logos/python.svg",
+  },
+  {
     label: "Azure",
     image: "/assets/logos/azure.svg",
   },
