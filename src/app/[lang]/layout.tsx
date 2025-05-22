@@ -4,8 +4,6 @@ import { Inter } from "next/font/google";
 
 import type { Dictionary } from "@/dictionaries/dictionary.model";
 import Header from "@/components/Header/Header";
-import SlideMenu from "@/components/SlideMenu/SlideMenu";
-import SlideMenuContextProvider from "@/context/SlideMenu";
 import Footer from "@/components/Footer/Footer";
 import "./globals.css";
 import { redirect } from "next/navigation";
@@ -50,10 +48,7 @@ export default async function RootLayout(props: Props) {
   return (
     <html lang={lang}>
       <body className={inter.className}>
-        <SlideMenuContextProvider>
-          <Header dictionary={dictionary.nav} />
-          <SlideMenu dictionary={dictionary.nav} />
-        </SlideMenuContextProvider>
+        <Header />
         {children}
         <Footer dictionary={dictionary.footer} />
         <Analytics />

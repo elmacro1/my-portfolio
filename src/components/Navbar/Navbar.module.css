@@ -4,7 +4,7 @@
 
 .links_container {
   display: flex;
-  gap: 16px;
+  gap: 8px;
   align-items: center;
 }
 
@@ -22,10 +22,6 @@
     hue-rotate(191deg) brightness(108%) contrast(101%);
 }
 
-.burguer_toggle {
-  display: none;
-}
-
 .lang_button {
   cursor: pointer;
   padding: 10px;
@@ -33,22 +29,10 @@
   color: #c4c4c4;
   font-size: 1rem;
   text-decoration: none;
-  margin-inline: 16px;
   transition: all 0.1s;
 }
 
 .lang_button:hover {
   scale: 1.1;
   color: #fff;
-}
-
-@media screen and (max-width: 700px) {
-  .links_container {
-    display: none;
-  }
-
-  .burguer_toggle {
-    display: block;
-    cursor: pointer;
-  }
 }
