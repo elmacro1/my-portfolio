@@ -35,24 +35,6 @@
   text-align: center;
 }
 
-.contact_button {
-  cursor: pointer;
-  background-color: transparent;
-  padding: 0.75rem 1.5rem;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  border: 1px solid #222;
-  color: #fff;
-  font-size: 1rem;
-}
-
-.contact_button:hover {
-  background-color: #111;
-  border-color: #333;
-}
-
 .profile_photo {
   border-radius: 100%;
 }
@@ -73,10 +55,6 @@
   }
 
   .subtitles {
-    font-size: 1rem;
-  }
-
-  .contact_button {
     font-size: 1rem;
   }
 }

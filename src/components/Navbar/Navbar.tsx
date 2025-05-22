@@ -23,7 +23,13 @@ const Navbar = () => {
           target="_blank"
           className={styles.links}
         >
-          <Image src={xIcon} alt="x icon" width={16} height={16} />
+          <Image
+            src={xIcon}
+            alt="x icon"
+            width={16}
+            height={16}
+            className={styles.image}
+          />
         </Link>
         <Link
           href="https://www.linkedin.com/in/marcoagalvan/"
@@ -35,6 +41,7 @@ const Navbar = () => {
             alt="linkedin icon"
             width={16}
             height={16}
+            className={styles.image}
           />
         </Link>
         <Link
@@ -42,7 +49,13 @@ const Navbar = () => {
           target="_blank"
           className={styles.links}
         >
-          <Image src={githubIcon} alt="github icon" width={16} height={16} />
+          <Image
+            src={githubIcon}
+            alt="github icon"
+            width={16}
+            height={16}
+            className={styles.image}
+          />
         </Link>
         <Link href={`/${switchLang}`} className={styles.lang_button}>
           {switchLang.toUpperCase()}

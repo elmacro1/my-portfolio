@@ -24,9 +24,6 @@ const Hero = ({ dictionary }: Props) => (
         <h1 className={styles.title}>{dictionary.title}</h1>
         <p className={styles.subtitles}>{dictionary.subtitle}</p>
         <p className={styles.subtitles}>{dictionary.location}</p>
-        <Link href="#contacto" className={styles.contact_button}>
-          {dictionary.button}
-        </Link>
       </div>
       <Logos />
     </article>

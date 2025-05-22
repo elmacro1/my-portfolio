@@ -2,14 +2,11 @@
   "hero": {
     "title": "Hola, soy Marco!",
     "subtitle": "Desarrollador Full Stack",
-    "location": "Santiago del Estero, Argentina",
-    "button": "Hablemos!"
+    "location": "Santiago del Estero, Argentina"
   },
   "nav": {
     "about": "Sobre mi",
-    "experience": "Experiencia",
-    "projects": "Proyectos",
-    "contact": "Contacto"
+    "experience": "Experiencia"
   },
   "about": {
     "title": "Sobre mí",
@@ -51,9 +48,6 @@
         "stack": "HTML - CSS - JS - React - React Native - Redux - Firebase - NodeJS - Express.js"
       }
     ]
-  },
-  "contact": {
-    "title": "Hablemos!"
   },
   "footer": {
     "title": "Desarrollado por Marco 😎",
